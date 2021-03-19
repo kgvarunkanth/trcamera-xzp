@@ -1,0 +1,50 @@
+.class final synthetic Lfiv;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Llqi;
+
+
+# instance fields
+.field private final a:Lfkg;
+
+
+# direct methods
+.method public constructor <init>(Lfkg;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lfiv;->a:Lfkg;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Ljava/lang/Object;)V
+    .locals 1
+
+    iget-object v0, p0, Lfiv;->a:Lfkg;
+
+    check-cast p1, Lilp;
+
+    invoke-virtual {p1}, Lilp;->e()Z
+
+    move-result p1
+
+    if-nez p1, :cond_0
+
+    iget-object p1, v0, Lfkg;->g:Liks;
+
+    iget-object v0, v0, Lfkg;->O:Landroid/content/DialogInterface$OnClickListener;
+
+    invoke-interface {p1, v0}, Liks;->e(Landroid/content/DialogInterface$OnClickListener;)Llr;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Llr;->show()V
+
+    :cond_0
+    return-void
+.end method

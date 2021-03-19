@@ -1,0 +1,39 @@
+.class final Lnwp;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# instance fields
+.field final synthetic a:Lnwv;
+
+
+# direct methods
+.method public constructor <init>(Lnwv;)V
+    .locals 0
+
+    iput-object p1, p0, Lnwp;->a:Lnwv;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onClick(Landroid/view/View;)V
+    .locals 1
+
+    iget-object p1, p0, Lnwp;->a:Lnwv;
+
+    iget-object v0, p1, Lnwv;->k:Lcom/google/android/material/textfield/TextInputLayout;
+
+    iget-object v0, v0, Lcom/google/android/material/textfield/TextInputLayout;->a:Landroid/widget/EditText;
+
+    check-cast v0, Landroid/widget/AutoCompleteTextView;
+
+    invoke-virtual {p1, v0}, Lnwv;->a(Landroid/widget/AutoCompleteTextView;)V
+
+    return-void
+.end method

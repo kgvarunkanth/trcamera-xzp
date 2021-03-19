@@ -1,0 +1,148 @@
+.class public final Loub;
+.super Ljava/lang/Object;
+
+
+# direct methods
+.method public static synthetic a(I)Ljava/lang/String;
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-eq p0, v0, :cond_2
+
+    const/4 v0, 0x2
+
+    if-eq p0, v0, :cond_1
+
+    const/4 v0, 0x3
+
+    if-eq p0, v0, :cond_0
+
+    const-string p0, "SWIPE_THUMBNAIL_UNDER_WITHOUT_ARROW"
+
+    return-object p0
+
+    :cond_0
+    const-string p0, "SWIPE_SOCIAL_SHARE_ARROW"
+
+    return-object p0
+
+    :cond_1
+    const-string p0, "TAP_SOCIAL_SHARE_ARROW"
+
+    return-object p0
+
+    :cond_2
+    const-string p0, "UNKNOWN_METHOD"
+
+    return-object p0
+.end method
+
+.method public static b(I)I
+    .locals 2
+
+    const/4 v0, 0x1
+
+    if-eqz p0, :cond_3
+
+    const/4 v1, 0x2
+
+    if-eq p0, v0, :cond_2
+
+    const/4 v0, 0x3
+
+    if-eq p0, v1, :cond_1
+
+    if-eq p0, v0, :cond_0
+
+    const/4 p0, 0x0
+
+    return p0
+
+    :cond_0
+    const/4 p0, 0x4
+
+    return p0
+
+    :cond_1
+    return v0
+
+    :cond_2
+    return v1
+
+    :cond_3
+    return v0
+.end method
+
+.method public static c(I)I
+    .locals 2
+
+    const/4 v0, 0x1
+
+    if-eqz p0, :cond_2
+
+    const/4 v1, 0x2
+
+    if-eq p0, v0, :cond_1
+
+    if-eq p0, v1, :cond_0
+
+    const/4 p0, 0x0
+
+    return p0
+
+    :cond_0
+    const/4 p0, 0x3
+
+    return p0
+
+    :cond_1
+    return v1
+
+    :cond_2
+    return v0
+.end method
+
+.method public static synthetic d(I)Ljava/lang/String;
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-eq p0, v0, :cond_3
+
+    const/4 v0, 0x2
+
+    if-eq p0, v0, :cond_2
+
+    const/4 v0, 0x3
+
+    if-eq p0, v0, :cond_1
+
+    const/4 v0, 0x4
+
+    if-eq p0, v0, :cond_0
+
+    const-string p0, "null"
+
+    return-object p0
+
+    :cond_0
+    const-string p0, "CLOSED"
+
+    return-object p0
+
+    :cond_1
+    const-string p0, "PAUSED"
+
+    return-object p0
+
+    :cond_2
+    const-string p0, "STARTED"
+
+    return-object p0
+
+    :cond_3
+    const-string p0, "READY"
+
+    return-object p0
+.end method

@@ -1,0 +1,30 @@
+.class public final synthetic Lgub;
+.super Ljava/lang/Object;
+
+
+# instance fields
+.field private final a:Llxs;
+
+
+# direct methods
+.method public constructor <init>(Llxs;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lgub;->a:Llxs;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
+    .locals 1
+
+    iget-object v0, p0, Lgub;->a:Llxs;
+
+    invoke-virtual {v0, p1, p2}, Llxs;->a(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
+
+    return-void
+.end method
